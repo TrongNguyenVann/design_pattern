@@ -3,3 +3,5 @@ Summary in this lesson:
 
 
 2, Becareful about "Object slicing" when assign a Derived class to Base class. Use pointer or reference can prevent this issue.
+
+3, Frequently use: High
