@@ -1,0 +1,5 @@
+Summary in this lesson:
+1, One class doesn't care about how it create member variable. Just pass to the constructor a AbstractFactory, and use this factory to create the right member.
+
+
+2, Becareful about "Object slicing" when assign a Derived class to Base class. Use pointer or reference can prevent this issue.
