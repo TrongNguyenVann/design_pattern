@@ -5,18 +5,18 @@ MotorCycleBuilder::MotorCycleBuilder() {
 }
 
 virtual void MotorCycleBuilder::BuildFrame() override {
-	vehicle_->InsertPart(vehicle_->FRAME, "MotorCycle Frame")
+	vehicle_->InsertPart(Vehicle::FRAME, "MotorCycle Frame")
 
 }
 
 virtual void MotorCycleBuilder::BuildEngine() override {
-	vehicle_->InsertPart(vehicle_->ENGINE, "500 cc")
+	vehicle_->InsertPart(Vehicle::ENGINE, "500 cc")
 }
 
 virtual void MotorCycleBuilder::BuildWheels() override {
-	vehicle_->InsertPart(vehicle_->WHEELS, "2");
+	vehicle_->InsertPart(Vehicle::WHEELS, "2");
 }
 
 virtual void MotorCycleBuilder::BuildDoors() override {
-	vehicle_->InsertPart(vehicle_->DOORS, "0");
+	vehicle_->InsertPart(Vehicle::DOORS, "0");
 }

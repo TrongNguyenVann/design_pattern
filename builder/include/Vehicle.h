@@ -1,5 +1,6 @@
 #include <string>
 #include <unordered_map>
+#include <iostream>
 
 
 /**
@@ -26,4 +27,6 @@ public:
 	static const char* ENGINE;
 	static const char* WHEELS;
 	static const char* DOORS;
+
+	friend std::ostream& operator<<(std::ostream& out, const Vehicle& vehicle);
 };

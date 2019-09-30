@@ -28,10 +28,19 @@ const char* Vehicle::DOORS = "doors";
 
 void Vehicle::InsertPart(const char* part_name, const std::string& part_value) { 
 		if ((std::string(part_name) != std::string(FRAME)) && 
-			((std::string(part_name) != std::string(ENGINE)) &&
-			((std::string(part_name) != std::string(WHEELS)) &&
+			(std::string(part_name) != std::string(ENGINE)) &&
+			(std::string(part_name) != std::string(WHEELS)) &&
 			(std::string(part_name) != std::string(DOORS))) {
 				throw std::invalid_argument("Part name: " + std::string(part_name) + " is not defined");
 		}
 	properties_[part_name] = part_value;
+}
+
+std::ostream& operator<<(std::ostream& out, const Vehicle& vehicle) {
+	out << type_ << ": {frame: " << vehicle.properties_[Vehicle::FRAME] 
+	<< ", engine: " << vehicle.properties_[Vehicle::ENGINE]
+	<< ", wheels: " << vehicle.properties_[Vehicle::WHEELS]
+	<< ", doors: " << vehicle.properties_[Vehicle::DOORS]
+	<< "}";
+	return out;
 }
