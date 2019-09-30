@@ -5,18 +5,18 @@ CarBuilder::CarBuilder() {
 	vehicle_ = new Vehicle("Car");
 }
 
-virtual void CarBuilder::BuildFrame() override {
+void CarBuilder::BuildFrame() {
 	vehicle_->InsertPart(Vehicle::FRAME, "Car Frame");
 }
 
-virtual void CarBuilder::BuildEngine() override {
-	vehicle_->InsertPart(Vehicle::ENGINE, "2500 cc")
+void CarBuilder::BuildEngine() {
+	vehicle_->InsertPart(Vehicle::ENGINE, "2500 cc");
 }
 
-virtual void CarBuilder::BuildWheels() override {
+void CarBuilder::BuildWheels() {
 	vehicle_->InsertPart(Vehicle::WHEELS, "4");
 }
 
-virtual void CarBuilder::BuildDoors() override {
-	vehicle_->InsertPart(Vehicle::DOORS, "4")
+void CarBuilder::BuildDoors() {
+	vehicle_->InsertPart(Vehicle::DOORS, "4");
 }

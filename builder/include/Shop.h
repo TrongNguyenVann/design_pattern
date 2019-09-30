@@ -1,3 +1,7 @@
+#ifndef SHOP_H
+#define SHOP_H
+
+
 #include "include/VehicleBuilder.h"
 
 class Shop {
@@ -9,3 +13,5 @@ public:
 		builder->BuildDoors();
 	}
 };
+
+#endif

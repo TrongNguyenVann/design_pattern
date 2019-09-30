@@ -1,3 +1,6 @@
+#ifndef VEHICLE_BUILDER_H
+#define VEHICLE_BUILDER_H
+
 #include "include/Vehicle.h"
 
 
@@ -18,3 +21,5 @@ public:
 	virtual void BuildWheels() = 0;
 	virtual void BuildDoors() = 0;
 };
+
+#endif

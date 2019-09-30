@@ -37,10 +37,10 @@ void Vehicle::InsertPart(const char* part_name, const std::string& part_value) {
 }
 
 std::ostream& operator<<(std::ostream& out, const Vehicle& vehicle) {
-	out << type_ << ": {frame: " << vehicle.properties_[Vehicle::FRAME] 
-	<< ", engine: " << vehicle.properties_[Vehicle::ENGINE]
-	<< ", wheels: " << vehicle.properties_[Vehicle::WHEELS]
-	<< ", doors: " << vehicle.properties_[Vehicle::DOORS]
+	out << vehicle.type_ << ": {frame: " << vehicle.properties_.at(Vehicle::FRAME)
+	<< ", engine: " << vehicle.properties_.at(Vehicle::ENGINE)
+	<< ", wheels: " << vehicle.properties_.at(Vehicle::WHEELS)
+	<< ", doors: " << vehicle.properties_.at(Vehicle::DOORS)
 	<< "}";
 	return out;
 }

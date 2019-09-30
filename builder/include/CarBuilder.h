@@ -1,4 +1,7 @@
+#ifndef CAR_BUILDER_H
+#define CAR_BUILDER_H
 
+#include "include/VehicleBuilder.h"
 
 class CarBuilder : public VehicleBuilder {
 public:
@@ -8,3 +11,5 @@ public:
 	virtual void BuildWheels() override;
 	virtual void BuildDoors() override;
 };
+
+#endif

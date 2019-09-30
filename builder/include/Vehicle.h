@@ -1,3 +1,6 @@
+#ifndef VEHICLE_H
+#define VEHICLE_H
+
 #include <string>
 #include <unordered_map>
 #include <iostream>
@@ -30,3 +33,5 @@ public:
 
 	friend std::ostream& operator<<(std::ostream& out, const Vehicle& vehicle);
 };
+
+#endif

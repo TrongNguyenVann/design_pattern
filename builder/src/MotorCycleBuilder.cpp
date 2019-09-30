@@ -1,22 +1,21 @@
-
+#include "include/MotorCycleBuilder.h"
 
 MotorCycleBuilder::MotorCycleBuilder() {
 	vehicle_ = new Vehicle("MotorCycle");
 }
 
-virtual void MotorCycleBuilder::BuildFrame() override {
-	vehicle_->InsertPart(Vehicle::FRAME, "MotorCycle Frame")
-
+void MotorCycleBuilder::BuildFrame() {
+	vehicle_->InsertPart(Vehicle::FRAME, "MotorCycle Frame");
 }
 
-virtual void MotorCycleBuilder::BuildEngine() override {
-	vehicle_->InsertPart(Vehicle::ENGINE, "500 cc")
+void MotorCycleBuilder::BuildEngine() {
+	vehicle_->InsertPart(Vehicle::ENGINE, "500 cc");
 }
 
-virtual void MotorCycleBuilder::BuildWheels() override {
+void MotorCycleBuilder::BuildWheels() {
 	vehicle_->InsertPart(Vehicle::WHEELS, "2");
 }
 
-virtual void MotorCycleBuilder::BuildDoors() override {
+void MotorCycleBuilder::BuildDoors() {
 	vehicle_->InsertPart(Vehicle::DOORS, "0");
 }
